@@ -1,4 +1,12 @@
-# puppeteer-extra-plugin-block-resources
+export default {
+  compileEnhancements: false,
+  environmentVariables: {
+    TS_NODE_COMPILER_OPTIONS: '{"module":"commonjs"}'
+  },
+  files: ['src/**.test.ts'],
+  extensions: ['ts'],
+  require: ['ts-node/register']
+}# puppeteer-extra-plugin-block-resources
 
 > A plugin for [puppeteer-extra](https://github.com/berstend/puppeteer-extra).
 
